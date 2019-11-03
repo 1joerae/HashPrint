@@ -1,0 +1,27 @@
+
+<html>
+    <head>
+        <title>Joe Rae's Hash Calculator</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <p><h1>Hash Calculator</h1>
+        <form action="hashprint" method="post">
+        <br/><p>Text to be hashed : 
+            <input type="text" name="hashcalculate"></p>
+            <p>Iterations : 
+            <input type="number" name="iterations" value="1"></p>
+            <p>Hashing algorithm : 
+            <select name="algorithm">
+                <option value="SHA-512" selected>SHA-512
+                <option value="SHA-256">SHA-256
+                <option value="SHA-1">SHA-1
+                <option value="MD5">MD-5           
+            </select>
+            </p>
+            
+            <p><input type="submit" value="Compute Hash"></p>
+        </form>
+    </body>
+</html>
